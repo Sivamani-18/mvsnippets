@@ -4,7 +4,7 @@
 	"description": "",
 	"version": "0.0.1",
 	"publisher": "Mindwave",
-  	"icon": "images/logo.png",
+  	"icon": "images/mindwave-logo.png",
   	"keywords": [
    		"snippets",
     	"css-snippets",
@@ -20,7 +20,7 @@
 		"vscode": "^1.63.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets"
 	],
 	"activationEvents": [
 		"onCommand:mvsnippets.helloWorld"
