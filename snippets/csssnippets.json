@@ -1,0 +1,12 @@
+{
+    "common css": {
+      "prefix": "mw-body",
+      "body": [
+        "body{",
+        "",
+        "}",
+        ""
+      ],
+      "description": "Creates a Common CSS"
+    }
+}

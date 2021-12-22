@@ -1,0 +1,27 @@
+{
+    "Add header tag with comment": {
+        "prefix": "mw.header",
+        "body": [
+          "<!---------- COMMENT NAME ---------->",
+          "",
+          "<header class='$1'></header>",
+          "",
+          "<!---------- END ---------->"
+        ],
+        "description": "Add header tag with comment"
+      },
+
+
+    "Add section tag with comment": {
+		"prefix": "mw.section",
+		"body": [
+		  "<!---------- COMMENT NAME ---------->",
+		  "",
+		  "<section class='$1'></section>",
+		  "",
+		  "<!---------- END ---------->"
+		],
+		"description": "Add section tag with comment"
+	  }  
+
+}
