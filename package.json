@@ -2,7 +2,7 @@
 	"name": "mvsnippets",
 	"displayName": "MV Front End Dev Snippets",
 	"description": "",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"publisher": "Sivasubramaniyam",
   	"icon": "images/mindwave-logo.png",
   	"keywords": [
@@ -23,7 +23,7 @@
 		"Snippets"
 	],
 	"activationEvents": [
-		"onCommand:mvsnippets.helloWorld"
+		"onCommand:mvsnippets.dev"
 	],
 	"extensionKind": [
 		"ui",
@@ -33,13 +33,13 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "mvsnippets.helloWorld",
+				"command": "mvsnippets.dev",
 				"title": "MV snippet search"
 			}
 		],
 		"keybindings": [
 			{
-			  "command": "mvsnippets.helloWorld",
+			  "command": "mvsnippets.dev",
 			  "key": "ctrl+alt+r",
 			  "mac": "shift+cmd+r",
 			  "when": "editorTextFocus"

@@ -25,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 	  window: { showQuickPick, activeTextEditor },
 	} = vscode
   
-	const disposable = registerCommand('mvsnippets.helloWorld', async () => {
+	const disposable = registerCommand('mvsnippets.dev', async () => {
 
 	vscode.window.showInformationMessage('Hello World from mvsnippets!');
 	  const cssscriptSnippets = Object.entries(cssSnippets as Array<Snippet>)
@@ -37,8 +37,8 @@ export function activate(context: vscode.ExtensionContext) {
 	  const aposschemas = Object.entries(aposschemasSnippets as Array<Snippet>)
 
 	  const snippetsArray: Array<[string, Snippet]> =
-		// javascriptSnippets.concat(typescriptSnippets)
-		Object.assign({}, cssscriptSnippets, htmlscriptSnippets, javascriptSnippets, typescriptSnippets, aposhtml, aposmisc, aposschemas);
+	  
+		javascriptSnippets.concat(cssscriptSnippets, htmlscriptSnippets, javascriptSnippets, typescriptSnippets, aposhtml, aposmisc, aposschemas)
   
 	  const items = snippetsArray.map(
 		([shortDescription, { prefix, body, description }], index) => {
