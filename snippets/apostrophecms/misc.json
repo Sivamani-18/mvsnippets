@@ -26,5 +26,29 @@
             "}"
         ],
         "description": "A piece defition"
+    },
+    "Custom Pages Defition": {
+        "prefix": "apos.pages",
+        "body": [
+                "module.exports = {",
+                "\textend: 'apostrophe-custom-pages',",
+                "\tlabel: '${1:label}',",
+                "\tafterConstruct: function (self) {",
+                "\tself.addDispatchRoutes();},",
+                "\tconstruct: function (self, options) {",
+                "\tself.addDispatchRoutes = function () {",
+                "\tself.dispatch('/', self.custom_pages_name);};",
+                "",
+                "\tself.custom_pages_name = function (req, callback) {",
+                "\treturn self.sendPage(req, self.renderer('html_pages_name', {}));",
+                "\t};",
+                "\t}",
+              "}"
+        ],
+        "description": "A custom pages defition"
     }
 }
+
+
+
+  

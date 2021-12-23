@@ -5,7 +5,7 @@
 
 # VS Code React/HTML/CSS/JS/Apostrophecms snippets
 
-JavaScript and HTML/CSS/ Apostrophecms snippets plugin features for [VS Code](https://code.visualstudio.com/)
+JavaScript and React / HTML / CSS / Apostrophecms snippets plugin features for [VS Code](https://code.visualstudio.com/)
 
 ## Installation
 
@@ -58,7 +58,7 @@ You can search through snippets with `MV snippet search` command which can be ru
 |  `tsrcc→` | `Type Script React Class Component` |
 
 
-
+<br>
 
 ### Apostrophecms Snippets
 
@@ -115,3 +115,13 @@ A snippet library for ApostropheCMS development.
 |  `apos.self.find→` | `Fetch a cursor from within a module that extends apostrophe-pieces`|
 |  `apos.docs.find→` | `Fetch a cursor from within a module outside of the one you are currently in`|
 |  `apos.piece→` | `A piece defition`|
+|  `apos.pages→` | `A custom pages defition`|
+
+### Apos-set password and change password
+
+```
+node app apostrophe-users:add admin admin
+
+node app apostrophe-users:change-password admin
+
+```
