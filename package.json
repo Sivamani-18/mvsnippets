@@ -15,10 +15,7 @@
 		"Nunjucks"
   	],
   	"license": "MIT",
-  	"repository": {
-    "type": "git",
-    "url": "https://github.com/Sivamani-18/mvsnippets"
-  	},
+
 	"engines": {
 		"vscode": "^1.63.0"
 	},

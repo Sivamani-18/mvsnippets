@@ -183,7 +183,7 @@
             "{",
                 "\tname: '${1:name}',",
                 "\tlabel: '${2:Label}',",
-                "\ttype: 'attachment'",
+                "\ttype: 'attachment',",
                 "\tgroup: 'office'",
             "}$4"
         ],
