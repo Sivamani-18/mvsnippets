@@ -20,7 +20,7 @@ Launch _Quick Open_:
 Paste the following command and press `Enter`:
 
 ```shell
-ext install Sivasubramaniyam.mvsnippets
+ext install Sivasubramaniyam.mwdevsnippets
 ```
 
 ## Search command
