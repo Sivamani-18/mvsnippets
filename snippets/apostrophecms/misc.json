@@ -1,0 +1,30 @@
+{
+    "Cursor Find": {
+        "prefix": "apos.self.find",
+        "body": [
+            "return self.find(req, {$1}${2:, {\\}}).${3:toArray}(function(err, ${4:docs}) {$5});"
+        ],
+        "description": "Fetch a cursor from within a module that extends apostrophe-pieces"
+    },
+    "Docs Find": {
+        "prefix": "apos.docs.find",
+        "body": [
+            "return self.apos.docs.getManager('{$1}').find(req, {$2}${3:, {\\}}).${4:toArray}(function(err, ${5:docs}) {$6});"
+        ],
+        "description": "Fetch a cursor from within a module outside of the one you are currently in"
+    },
+    "Piece Definition": {
+        "prefix": "apos.piece",
+        "body": [
+            "module.exports = {",
+                "\textend: 'apostrophe-pieces',",
+                "\tname: '${1:name}',",
+                "\talias: '${3:alias}',",
+                "\tlabel: '${4:label}',",
+                "\tpluralLabel: '${5:labels}',",
+                "\taddFields:[]",
+            "}"
+        ],
+        "description": "A piece defition"
+    }
+}

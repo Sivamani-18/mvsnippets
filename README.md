@@ -39,7 +39,7 @@ You can search through snippets with `MV snippet search` command which can be ru
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
-|  `mw-body→` | `common css`                   |
+|  `mw-body→` | `common css`|
 
 
 
@@ -47,13 +47,40 @@ You can search through snippets with `MV snippet search` command which can be ru
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
-|  `rcreduxp→` | `React Class Compoment Redux PropTypes`                   |
+|  `rcreduxp→` | `React Class Compoment Redux PropTypes`|
 
 
 ### TSReact
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
-|  `tsrcc→` | `Type Script React Class Component`                   |
+|  `tsrcc→` | `Type Script React Class Component` |
 
-```
+
+
+### Apostrophecms Snippets
+
+## Features
+
+A snippet library for ApostropheCMS development.
+
+### HTML Template Snippets
+
+|  Prefix | Method                                              |
+| ------: | --------------------------------------------------- |
+|  `apos.apos.richtext→` | `Renders a rich text singleton in your template`|
+|  `apos.log→` | `Passes expression to console.log.`|
+|  `apos.singleton→` | `Renders a single widget in your template`|
+|  `apos.area→` | `Renders a single widget in your template`|
+|  `apos.isEmpty→` | `Conditional that detects an empty widget`|
+
+### Schemas
+#### Further Reading: [http://apostrophecms.org/docs/tutorials/getting-started/schema-guide.html](http://apostrophecms.org/docs/tutorials/getting-started/schema-guide.html)
+
+|  Prefix | Method                                              |
+| ------: | --------------------------------------------------- |
+|  `apos.schema.area→` | `A generic schema area`|
+|  `apos.schema.singleton→` | `A generic schema singleton`|
+|  `apos.schema.field→` | `A generic schema field`|
+|  `apos.schema.string→` | `A string field`|
+|  `apos.schema.integer→` | `An integer schema field`|

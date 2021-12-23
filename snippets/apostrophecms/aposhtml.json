@@ -1,0 +1,42 @@
+{
+  "Area": {
+      "prefix": "apos.area",
+      "body": [
+          "{{ apos.area(${1:context}, '${2:name}'${3:, { ${4:options}} }) }}"
+      ],
+      "description": "Renders a single widget in your template"
+  },
+  "Log": {
+      "prefix": "apos.log",
+      "body": [
+          "{{ apos.log(${1:expression}) }}"
+      ],
+      "description": "Passes expression to console.log. Very useful for debugging."
+  },
+  "Singleton": {
+      "prefix": "apos.singleton",
+      "body": [
+          "{{ apos.singleton(${1:context}, '${2:name}', '${3:type}'${4:, { ${5:options} \\}}) }}"
+      ],
+      "description": "Renders a single widget in your template"
+  },
+  "Rich Text Singleton": {
+      "prefix": "apos.richtext",
+      "body": [
+          "{{ apos.singleton(${1:context}, '${2:name}', 'apostrophe-rich-text'${4:, {",
+              "\ttoolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink', 'NumberedList', 'BulletedList', 'split'],",
+              "\tstyles: [{" ,
+                  "\t\t name: 'Body Copy', element: 'p', attributes: { class: 'o-body' }",
+              "\t}]",
+          "} }}"
+      ],
+      "description": "Renders a rich text singleton in your template"
+  },
+  "isEmpty": {
+      "prefix": "apos.isEmpty",
+      "body": [
+          "{% if apos.areas.isEmpty(${1:context}, '${2:name}') %} it's empty {% endif %}"
+      ],
+      "description": "Conditional that detects an empty widget"
+  }
+}
