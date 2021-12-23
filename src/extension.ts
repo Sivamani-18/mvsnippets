@@ -3,6 +3,11 @@ const cssSnippets = require('../snippets/csssnippets.json')
 const htmlSnippets = require('../snippets/htmlsnippets.json')
 const jsSnippets = require('../snippets/jssnippets.json')
 const tsSnippets = require('../snippets/tssnippets.json')
+const aposhtmlSnippets = require('../snippets/apostrophecms/html.json')
+const aposmiscSnippets = require('../snippets/apostrophecms/misc.json')
+const aposschemasSnippets = require('../snippets/apostrophecms/schemas.json')
+
+
 
 type Snippet = {
 	body: Array<string> | string
@@ -27,9 +32,13 @@ export function activate(context: vscode.ExtensionContext) {
 	  const htmlscriptSnippets = Object.entries(htmlSnippets as Array<Snippet>)
 	  const javascriptSnippets = Object.entries(jsSnippets as Array<Snippet>)
 	  const typescriptSnippets = Object.entries(tsSnippets as Array<Snippet>)
+	  const aposhtml = Object.entries(aposhtmlSnippets as Array<Snippet>)
+	  const aposmisc = Object.entries(aposmiscSnippets as Array<Snippet>)
+	  const aposschemas = Object.entries(aposschemasSnippets as Array<Snippet>)
+
 	  const snippetsArray: Array<[string, Snippet]> =
 		// javascriptSnippets.concat(typescriptSnippets)
-		Object.assign({}, cssscriptSnippets, htmlscriptSnippets, javascriptSnippets, typescriptSnippets);
+		Object.assign({}, cssscriptSnippets, htmlscriptSnippets, javascriptSnippets, typescriptSnippets, aposhtml, aposmisc, aposschemas);
   
 	  const items = snippetsArray.map(
 		([shortDescription, { prefix, body, description }], index) => {

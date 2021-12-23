@@ -68,19 +68,48 @@ A snippet library for ApostropheCMS development.
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
-|  `apos.apos.richtext→` | `Renders a rich text singleton in your template`|
+|  `apos.richtext→` | `Renders a rich text singleton in your template`|
 |  `apos.log→` | `Passes expression to console.log.`|
 |  `apos.singleton→` | `Renders a single widget in your template`|
 |  `apos.area→` | `Renders a single widget in your template`|
 |  `apos.isEmpty→` | `Conditional that detects an empty widget`|
 
 ### Schemas
-#### Further Reading: [http://apostrophecms.org/docs/tutorials/getting-started/schema-guide.html](http://apostrophecms.org/docs/tutorials/getting-started/schema-guide.html)
+#### Further Reading: [https://v2.docs.apostrophecms.org/reference/modules/apostrophe-schemas/#apos-schemas](https://v2.docs.apostrophecms.org/reference/modules/apostrophe-schemas/#apos-schemas)
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
+|  `apos.schema.field→` | `A generic schema field`|
+|  `apos.schema.integer→` | `An integer schema field`|
+|  `apos.schema.url→` | `A url schema field`|
+|  `apos.schema.float→` | `A float schema field`|
 |  `apos.schema.area→` | `A generic schema area`|
 |  `apos.schema.singleton→` | `A generic schema singleton`|
-|  `apos.schema.field→` | `A generic schema field`|
+|  `apos.schema.date→` | `A date field`|
+|  `apos.schema.time→` | `A time field`|
+|  `apos.schema.boolean→` | `A date field`|
 |  `apos.schema.string→` | `A string field`|
-|  `apos.schema.integer→` | `An integer schema field`|
+|  `apos.schema.password→` | `A password field`|
+|  `apos.schema.slug→` | `A slug field`|
+|  `apos.schema.tags→` | `A tag array field`|
+|  `apos.schema.textarea→` | `A textarea field`|
+|  `apos.schema.attachment→` | `An attachment field`|
+|  `apos.schema.video→` | `A video field`|
+|  `apos.schema.select→` | `A select field`|
+|  `apos.schema.array→` | `An array field`|
+|  `apos.schema.checkboxes→` | `An array of checkboxes`|
+|  `apos.schema.select.choice→` | `A select choice`|
+|  `apos.schema.joinByOne→` | `A joinByOne field`|
+|  `apos.schema.joinByArray→` | `A joinByArray field`|
+|  `apos.schema.joinByOneReverse→` | `A joinByOneReverse field`|
+|  `apos.schema.joinByArrayReverse→` | `A joinByArrayReverse field`|
+
+
+### Schemas
+
+
+|  Prefix | Method                                              |
+| ------: | --------------------------------------------------- |
+|  `apos.self.find→` | `Fetch a cursor from within a module that extends apostrophe-pieces`|
+|  `apos.docs.find→` | `Fetch a cursor from within a module outside of the one you are currently in`|
+|  `apos.piece→` | `A piece defition`|

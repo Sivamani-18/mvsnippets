@@ -9,7 +9,10 @@
    		"snippets",
     	"css-snippets",
     	"html-snippets",
-    	"javascript"
+    	"javascript",
+		"ApostropheCMS",
+		"Apostrophe",
+		"Nunjucks"
   	],
   	"license": "MIT",
   	"repository": {
@@ -97,6 +100,18 @@
 				{
 				"language": "typescriptreact",
 				"path": "./snippets/tssnippets.json"
+				},
+				{
+					"language": "javascript",
+					"path": "./snippets/apostrophecms/schemas.json"
+				},
+				{
+					"language": "javascript",
+					"path": "./snippets/apostrophecms/misc.json"
+				},
+				{
+					"language": "html",
+					"path": "./snippets/apostrophecms/html.json"
 				}
 		]
 	},
