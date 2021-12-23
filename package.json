@@ -1,9 +1,9 @@
 {
 	"name": "mvsnippets",
-	"displayName": "mvsnippets",
+	"displayName": "MV Frentend Dev Snippets",
 	"description": "",
 	"version": "0.0.1",
-	"publisher": "Mindwave",
+	"publisher": "Sivasubramaniyam",
   	"icon": "images/mindwave-logo.png",
   	"keywords": [
    		"snippets",
@@ -25,6 +25,10 @@
 	"activationEvents": [
 		"onCommand:mvsnippets.helloWorld"
 	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	  ],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -32,6 +36,48 @@
 				"command": "mvsnippets.helloWorld",
 				"title": "MV snippet search"
 			}
+		],
+		"keybindings": [
+			{
+			  "command": "mvsnippets.helloWorld",
+			  "key": "ctrl+alt+r",
+			  "mac": "shift+cmd+r",
+			  "when": "editorTextFocus"
+			}
+		  ],
+		  "snippets": [
+			{
+			  "language": "css",
+			  "path": "./snippets/csssnippets.json"
+			},
+			{
+			  "language": "html",
+			  "path": "./snippets/htmlsnippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/jssnippets.json"
+			  },
+			  {
+				"language": "javascriptreact",
+				"path": "./snippets/jssnippets.json"
+			  },
+			  {
+				"language": "typescript",
+				"path": "./snippets/jssnippets.json"
+			  },
+			  {
+				"language": "typescriptreact",
+				"path": "./snippets/jssnippets.json"
+			  },
+			  {
+				"language": "typescript",
+				"path": "./snippets/tssnippets.json"
+			  },
+			  {
+				"language": "typescriptreact",
+				"path": "./snippets/tssnippets.json"
+			  }
 		]
 	},
 	"scripts": {
