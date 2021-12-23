@@ -119,9 +119,15 @@ A snippet library for ApostropheCMS development.
 
 ### Apos-set password and change password
 
+Add user and set password
+
 ```
 node app apostrophe-users:add admin admin
+```
 
+Change Password
+
+```
 node app apostrophe-users:change-password admin
 
 ```
