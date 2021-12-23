@@ -19,11 +19,14 @@ Launch _Quick Open_:
 
 Paste the following command and press `Enter`:
 
+```shell
+ext install Sivasubramaniyam.mvsnippets
+```
+
 ## Search command
 
 You can search through snippets with `MV snippet search` command which can be run with `CMD + Shift + P` or just use `CMD + Shift + R` (`CTRL + ALT + R` for Windows & Linux) keybinding.
 
-<br>
 
 ### HTML
 
