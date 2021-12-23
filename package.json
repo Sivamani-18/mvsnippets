@@ -2,7 +2,7 @@
 	"name": "mwdevsnippets",
 	"displayName": "MW Front End Dev Snippets",
 	"description": "VS Code React/HTML/CSS/JS/Apostrophecms snippets",
-	"version": "0.0.8",
+	"version": "1.0.1",
 	"publisher": "Sivasubramaniyam",
   	"icon": "images/mindwave-logo.png",
   	"keywords": [
