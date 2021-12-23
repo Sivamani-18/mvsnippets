@@ -2,7 +2,7 @@
 	"name": "mvsnippets",
 	"displayName": "MV Front End Dev Snippets",
 	"description": "VS Code React/HTML/CSS/JS/Apostrophecms snippets",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"publisher": "Sivasubramaniyam",
   	"icon": "images/mindwave-logo.png",
   	"keywords": [
