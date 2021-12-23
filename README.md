@@ -117,7 +117,9 @@ A snippet library for ApostropheCMS development.
 |  `apos.piece→` | `A piece defition`|
 |  `apos.pages→` | `A custom pages defition`|
 
-### Apos-set password and change password
+<br>
+
+### apostrophe - set password and change password
 
 Add user and set password
 
