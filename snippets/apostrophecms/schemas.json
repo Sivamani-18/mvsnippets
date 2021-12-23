@@ -1,0 +1,328 @@
+{
+    "Schema Field: generic": {
+        "prefix": "apos.schema.field",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: '${3:type}'",
+            "}$4"
+        ],
+        "description": "A generic schema field"
+    },
+    "Schema Field: integer": {
+        "prefix": "apos.schema.integer",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'integer'",
+            "}$4"
+        ],
+        "description": "An integer schema field"
+    },
+    "Schema Field: url": {
+        "prefix": "apos.schema.url",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'url'",
+            "}$4"
+        ],
+        "description": "A url schema field"
+    },
+    "Schema Field: float": {
+        "prefix": "apos.schema.float",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'float',",
+                "\tmin: 1.0,",
+                "\tmax: 4.0",
+            "}$4"
+        ],
+        "description": "A float schema field"
+    },
+    "Schema Field: area": {
+        "prefix": "apos.schema.area",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'area',",
+                "\toptions: {",
+                    "\t\twidgets: {",
+                        "\t\t\t'apostrophe-rich-text': {",
+                            "\t\t\t\ttoolbar:[ 'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink', 'NumberedList', 'BulletedList' ],",
+                            "\t\t\t\tstyles:[",
+                                "\t\t\t\t\t{ name: 'Body Copy', element: 'p', attributes: { class: 'o-body' } }",
+                             "\t\t\t\t]",
+                        "\t\t\t}",
+                    "\t\t}",
+                "\t}",
+            "}$4"
+        ],
+        "description": "A generic schema area"
+    },
+    "Schema Field: singleton": {
+        "prefix": "apos.schema.singleton",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'singleton',",
+                "\twidgetType: '${3:apostrophe-images}',",
+                "\toptions: {",
+                    "\t\taspectRatio: [ 4, 3 ],",
+                    "\t\tminSize: [ 400, 300 ],",
+                    "\t\tlimit: [ 1 ]",
+                "\t}",
+            "}$4"
+        ],
+        "description": "A generic schema singleton"
+    },
+    "Schema Field: date": {
+        "prefix": "apos.schema.date",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'date'",
+            "}$4"
+        ],
+        "description": "A date field"
+    },
+    "Schema Field: time": {
+        "prefix": "apos.schema.time",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\tdef: '09:00:00',",
+                "\ttype: 'time'",
+            "}$4"
+        ],
+        "description": "A time field"
+    },
+    "Schema Field: boolean": {
+        "prefix": "apos.schema.boolean",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'boolean',",
+                "\tchoices: [",
+                    "\t\t{ label: 'Yes', value: true, showFields: ['field'] }",
+                "\t]",
+            "}$4"
+        ],
+        "description": "A date field"
+    },
+    "Schema Field: string": {
+        "prefix": "apos.schema.string",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'string'",
+            "}$4"
+        ],
+        "description": "A string field"
+    },
+    "Schema Field: password": {
+        "prefix": "apos.schema.password",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'password'",
+            "}$4"
+        ],
+        "description": "A password field"
+    },
+    "Schema Field: slug": {
+        "prefix": "apos.schema.slug",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'slug',",
+                "\trequired: true",
+            "}$4"
+        ],
+        "description": "A slug field"
+    },
+    "Schema Field: tags": {
+        "prefix": "apos.schema.tags",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'tags',",
+            "}$4"
+        ],
+        "description": "A tag array field"
+    },
+    "Schema Field: textarea": {
+        "prefix": "apos.schema.textarea",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'string'",
+                "\ttextarea: true",
+            "}$4"
+        ],
+        "description": "A textarea field"
+    },
+    "Schema Field: attachment": {
+        "prefix": "apos.schema.attachment",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'attachment'",
+                "\tgroup: 'office'",
+            "}$4"
+        ],
+        "description": "An attachment field"
+    },
+    "Schema Field: video": {
+        "prefix": "apos.schema.video",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'video'",
+            "}$4"
+        ],
+        "description": "A video field"
+    },
+    "Schema Field: select": {
+        "prefix": "apos.schema.select",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'select',",
+                "\tchoices: [",
+                    "\t\t{ label: '${3:Label}', value: '${4:${5:value}}', showFields:['$6'] }",
+                "\t]",
+            "}$7"
+        ],
+        "description": "A select field"
+    },
+    "Schema Field: array": {
+        "prefix": "apos.schema.array",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'array',",
+                "\ttitleField: 'Array Label',",
+                "\tschema: [",
+                    "\t\t{",
+                        "\t\t\ttype: 'string',",
+                        "\t\t\tname: 'string',",
+                        "\t\t\tlabel: 'String',",
+                    "\t\t}",
+                "\t]",
+            "}"
+        ],
+        "description": "An array field"
+    },
+    "Schema Field: checkboxes": {
+        "prefix": "apos.schema.checkboxes",
+        "body": [
+            "{",
+                "\tname: '${1:name}',",
+                "\tlabel: '${2:Label}',",
+                "\ttype: 'checkboxes',",
+                "\tchoices: [",
+                    "\t\t{ label: '${3:Big}', value: '${4:big}' }",
+                "\t]",
+            "}$7"
+        ],
+        "description": "An array of checkboxes"
+    },
+    "Schema Field: select choice": {
+        "prefix": "apos.schema.select.choice",
+        "body": [
+            "{ label: '${1:Label}', value: '${2:${1:value}}' }$3"
+        ],
+        "description": "A select choice"
+    },
+    "Schema Field: joinByOne": {
+        "prefix": "apos.schema.joinByOne",
+        "body": [
+            "{",
+                "\tname: '_${1:page}',",
+                "\tlabel: '${2:Page to Link}',",
+                "\ttype: 'joinByOne',",
+                "\twithType: '${3:apostrophe-page}',",
+                "\tfilters: {",
+                    "\t\tprojection: {",
+                        "\t\t\t${5:_url: 1,}",
+                        "\t\t\t${6:slug: 1,}",
+                        "\t\t\t${7:title: 1,}",
+                        "\t\t\t${8:type: 1}",
+                    "\t\t}",
+                "\t}",
+            "}"
+        ],
+        "description": "A joinByOne field"
+    },
+    "Schema Field: joinByArray": {
+        "prefix": "apos.schema.joinByArray",
+        "body": [
+            "{",
+                "\tname: '_${1:pages}',",
+                "\tlabel: '${2:Pages to Link}',",
+                "\ttype: 'joinByArray',",
+                "\twithType: '${3:apostrophe-page}',",
+                "\tfilters: {",
+                    "\t\tprojection: {",
+                        "\t\t\t${4:_url: 1,}",
+                        "\t\t\t${5:slug: 1,}",
+                        "\t\t\t${6:title: 1,}",
+                        "\t\t\t${7:type: 1}",
+                    "\t\t}",
+                "\t}",
+            "}"
+        ],
+        "description": "A joinByArray field"
+    },
+    "Schema Field: joinByOneReverse": {
+        "prefix": "apos.schema.joinByOneReverse",
+        "body": [
+            "{",
+                "\tname: '_${1:pages}',",
+                "\tlabel: '${2:Pages to Link}',",
+                "\ttype: 'joinByOneReverse',",
+                "\twithType: '${3:apostrophe-page}',",
+                "\tgetOptions: {",
+                    "\t\t${4:upcoming: true,}",
+                    "\t\t${5:limit: 10}",
+                "\t}",
+            "}"
+        ],
+        "description": "A joinByOneReverse field"
+    },
+    "Schema Field: joinByArrayReverse": {
+        "prefix": "apos.schema.joinByArrayReverse",
+        "body": [
+            "{",
+                "\tname: '_${1:pages}',",
+                "\tlabel: '${2:Pages to Link}',",
+                "\ttype: 'joinByArrayReverse',",
+                "\twithType: '${3:apostrophe-page}',",
+                "\twithJoins: [",
+                    "\t\t${4:'_piece'}",
+                "\t]",
+            "}"
+        ],
+        "description": "A joinByArrayReverse field"
+    }
+}
