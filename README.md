@@ -54,7 +54,9 @@ You can search through snippets with `MV snippet search` command which can be ru
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
+|  `rh→` | `Typescript React Function Component` |
 |  `tsrcc→` | `Type Script React Class Component` |
+
 
 
 
