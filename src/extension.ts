@@ -1,6 +1,8 @@
 import * as vscode from 'vscode';
-const jsSnippets = require('../snippets/csssnippets.json')
-const tsSnippets = require('../snippets/htmlsnippets.json')
+const cssSnippets = require('../snippets/csssnippets.json')
+const htmlSnippets = require('../snippets/htmlsnippets.json')
+const jsSnippets = require('../snippets/jssnippets.json')
+const tsSnippets = require('../snippets/tssnippets.json')
 
 type Snippet = {
 	body: Array<string> | string
@@ -21,11 +23,13 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposable = registerCommand('mvsnippets.helloWorld', async () => {
 
 	vscode.window.showInformationMessage('Hello World from mvsnippets!');
-
+	  const cssscriptSnippets = Object.entries(cssSnippets as Array<Snippet>)
+	  const htmlscriptSnippets = Object.entries(htmlSnippets as Array<Snippet>)
 	  const javascriptSnippets = Object.entries(jsSnippets as Array<Snippet>)
 	  const typescriptSnippets = Object.entries(tsSnippets as Array<Snippet>)
 	  const snippetsArray: Array<[string, Snippet]> =
-		javascriptSnippets.concat(typescriptSnippets)
+		// javascriptSnippets.concat(typescriptSnippets)
+		Object.assign({}, cssscriptSnippets, htmlscriptSnippets, javascriptSnippets, typescriptSnippets);
   
 	  const items = snippetsArray.map(
 		([shortDescription, { prefix, body, description }], index) => {

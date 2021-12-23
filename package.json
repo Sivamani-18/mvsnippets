@@ -2,7 +2,7 @@
 	"name": "mvsnippets",
 	"displayName": "MV Frentend Dev Snippets",
 	"description": "",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "Sivasubramaniyam",
   	"icon": "images/mindwave-logo.png",
   	"keywords": [
@@ -45,63 +45,59 @@
 			  "when": "editorTextFocus"
 			}
 		  ],
-		  "snippets": [
+			"snippets": [
 			{
-			  "language": "css",
-			  "path": "./snippets/csssnippets.json"
+				"language": "css",
+				"path": "./snippets/csssnippets.json"
 			},
 			{
-				"language": "sass",
-				"path": "./snippets/csssnippets.json"
-			  },
-			  {
 				"language": "html",
 				"path": "./snippets/csssnippets.json"
-			  },
+				},
 			{
-			  "language": "html",
-			  "path": "./snippets/htmlsnippets.json"
+				"language": "html",
+				"path": "./snippets/htmlsnippets.json"
 			},
 			{
 				"language": "javascript",
 				"path": "./snippets/htmlsnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "javascriptreact",
 				"path": "./snippets/htmlsnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "typescript",
 				"path": "./snippets/htmlsnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "typescriptreact",
 				"path": "./snippets/htmlsnippets.json"
-			  },
+				},
 			{
 				"language": "javascript",
 				"path": "./snippets/jssnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "javascriptreact",
 				"path": "./snippets/jssnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "typescript",
 				"path": "./snippets/jssnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "typescriptreact",
 				"path": "./snippets/jssnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "typescript",
 				"path": "./snippets/tssnippets.json"
-			  },
-			  {
+				},
+				{
 				"language": "typescriptreact",
 				"path": "./snippets/tssnippets.json"
-			  }
+				}
 		]
 	},
 	"scripts": {
