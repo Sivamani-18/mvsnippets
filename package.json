@@ -1,8 +1,8 @@
 {
-	"name": "mvsnippets",
-	"displayName": "MV Front End Dev Snippets",
+	"name": "mwdevsnippets",
+	"displayName": "MW Front End Dev Snippets",
 	"description": "VS Code React/HTML/CSS/JS/Apostrophecms snippets",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"publisher": "Sivasubramaniyam",
   	"icon": "images/mindwave-logo.png",
   	"keywords": [
