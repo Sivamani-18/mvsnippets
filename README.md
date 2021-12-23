@@ -105,7 +105,7 @@ A snippet library for ApostropheCMS development.
 |  `apos.schema.joinByArrayReverse→` | `A joinByArrayReverse field`|
 
 
-### Schemas
+### MISC
 
 
 |  Prefix | Method                                              |
