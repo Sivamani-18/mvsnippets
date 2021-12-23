@@ -51,9 +51,33 @@
 			  "path": "./snippets/csssnippets.json"
 			},
 			{
+				"language": "sass",
+				"path": "./snippets/csssnippets.json"
+			  },
+			  {
+				"language": "html",
+				"path": "./snippets/csssnippets.json"
+			  },
+			{
 			  "language": "html",
 			  "path": "./snippets/htmlsnippets.json"
 			},
+			{
+				"language": "javascript",
+				"path": "./snippets/htmlsnippets.json"
+			  },
+			  {
+				"language": "javascriptreact",
+				"path": "./snippets/htmlsnippets.json"
+			  },
+			  {
+				"language": "typescript",
+				"path": "./snippets/htmlsnippets.json"
+			  },
+			  {
+				"language": "typescriptreact",
+				"path": "./snippets/htmlsnippets.json"
+			  },
 			{
 				"language": "javascript",
 				"path": "./snippets/jssnippets.json"
