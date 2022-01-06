@@ -1,4 +1,13 @@
 {
+    
+    "Pages Pieces Find": {
+        "prefix": "apos.pieces.find",
+        "body": [
+            "var ${1:nameArray} = await self.apos.modules['${2:pages_name}'].pieces.find(req, {}).toArray();"
+        ],
+        "description": "Fetch a Pieces from within a module that extends apostrophe-pages"
+    },
+    
     "Cursor Find": {
         "prefix": "apos.self.find",
         "body": [
@@ -37,10 +46,10 @@
                 "\tself.addDispatchRoutes();},",
                 "\tconstruct: function (self, options) {",
                 "\tself.addDispatchRoutes = function () {",
-                "\tself.dispatch('/', self.custom_pages_name);};",
+                "\tself.dispatch('/', self.${2:custom_pages_name});};",
                 "",
-                "\tself.custom_pages_name = function (req, callback) {",
-                "\treturn self.sendPage(req, self.renderer('html_pages_name', {}));",
+                "\tself.${3:custom_pages_name} = function (req, callback) {",
+                "\treturn self.sendPage(req, self.renderer('${4:html_pages_name}', {${5}}));",
                 "\t};",
                 "\t}",
               "}"

@@ -60,9 +60,9 @@ You can search through snippets with `MV snippet search` command which can be ru
 
 <br>
 
-### Apostrophecms Snippets
+## Apostrophecms Snippets
 
-## Features
+### Features
 
 A snippet library for ApostropheCMS development.
 
@@ -70,11 +70,23 @@ A snippet library for ApostropheCMS development.
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
+|  `apos.richtext.area→` | `Renders a rich text area in your template`|
 |  `apos.richtext→` | `Renders a rich text singleton in your template`|
+|  `apos.data.sent→` | `Common component data sent in your template`|
 |  `apos.log→` | `Passes expression to console.log.`|
 |  `apos.singleton→` | `Renders a single widget in your template`|
 |  `apos.area→` | `Renders a single widget in your template`|
 |  `apos.isEmpty→` | `Conditional that detects an empty widget`|
+
+### Nunjucks
+
+|  Prefix | Method                                              |
+| ------: | --------------------------------------------------- |
+|  `njx.set→` | `Common component data sent in your template`|
+
+
+
+|  ` →` | ` `|
 
 ### Schemas
 #### Further Reading: [https://v2.docs.apostrophecms.org/reference/modules/apostrophe-schemas/#apos-schemas](https://v2.docs.apostrophecms.org/reference/modules/apostrophe-schemas/#apos-schemas)
@@ -112,10 +124,14 @@ A snippet library for ApostropheCMS development.
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
+|  `apos.pages→` | `A custom pages defition`|
+|  `apos.piece→` | `A piece defition`|
+|  `apos.pieces.find→` | `Fetch a cursor from within a module that extends apostrophe-pages`|
 |  `apos.self.find→` | `Fetch a cursor from within a module that extends apostrophe-pieces`|
 |  `apos.docs.find→` | `Fetch a cursor from within a module outside of the one you are currently in`|
-|  `apos.piece→` | `A piece defition`|
-|  `apos.pages→` | `A custom pages defition`|
+
+
+
 
 <br>
 

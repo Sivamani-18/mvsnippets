@@ -23,7 +23,7 @@
   "Rich Text Singleton": {
       "prefix": "apos.richtext",
       "body": [
-          "{{ apos.singleton(${1:context}, '${2:name}', 'apostrophe-rich-text'${4:, {",
+          "{{ apos.singleton(${1:data.page}, '${2:name}', 'apostrophe-rich-text'${4:, {",
               "\ttoolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink', 'NumberedList', 'BulletedList', 'split'],",
               "\tstyles: [{" ,
                   "\t\t name: 'Body Copy', element: 'p', attributes: { class: 'o-body' }",
@@ -32,11 +32,78 @@
       ],
       "description": "Renders a rich text singleton in your template"
   },
+  "Rich Text area": {
+    "prefix": "apos.richtext.area",
+    "body": [
+        "{{ apos.area(data.page, '${1:name}', {",
+            "widgets: {",
+              "'apostrophe-rich-text': {",
+              "\ttoolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Anchor', 'Unlink', 'NumberedList', 'BulletedList', 'split'],",
+              "\tstyles: [",
+              "\t{ name: 'Heading', element: 'h2', attributes: { class: '${2:Class_name}'},",
+              "\t{ name: 'Min_Heading', element: 'h4', attributes: { class: '${3:Class_name}'},",
+              "\t{ name: 'Paragraph', element: 'p' , attributes: { class: '${4:Class_name}'}",
+              "]}",
+            "} }) }}"
+    ],
+    "description": "Renders a rich text area in your template"
+},
   "isEmpty": {
       "prefix": "apos.isEmpty",
       "body": [
           "{% if apos.areas.isEmpty(${1:context}, '${2:name}') %} it's empty {% endif %}"
       ],
       "description": "Conditional that detects an empty widget"
-  }
+  },
+
+
+
+  "Loading a random work from the macros/loading.html": {
+    "prefix": "njx.apos.loading",
+    "body": [
+        "{% import 'macros/loading.html' as loading %}",
+        "{{ loading.render() }}"
+    ],
+    "description": "Common component data sent in your template"
+},
+
+
+
+"Common component data button": {
+    "prefix": "njx.apos.button",
+    "body": [
+        "{% import 'macros/button.html' as button %}",
+        "{% set w = data.widget %}",
+        "{{ button.render('Read the Event', w.url, { class:'btn' }) }}"
+    ],
+    "description": "Common component data sent in your template"
+},
+"ADD Macro button in macros/button.html": {
+    "prefix": "njx.macro.button",
+    "body": [
+        "{% macro render(label, url, options) %} ", 
+        "<a href='{{ url }}' class='o-button{% if options.class %} {{ options.class }}{% endif %}'>{{ label }}</a>",
+        " {% endmacro %}"
+    ],
+    "description": "Common component data sent in your template"
+},
+
+
+
+
+  "Common component data set": {
+    "prefix": "njx.set",
+    "body": [
+       "{% set ${1:sectionHeader} = { title: '${2:title}', subtitle: '${3:subtitle}' } %}",
+       "{% include '${4:template_path.html}' %}",
+       "<!-- Add Below div section in template_path.html -->",
+       "<!-- <div class=' {{sectionHeader.class}}'><h2 class='text-primary'>{{sectionHeader.title}}</h2><p class='text-primary'>{{sectionHeader.subtitle}}</p></div> -->"
+    ],
+    "description": "Common component data set in your template"
+}
+
+
+
+
+
 }
