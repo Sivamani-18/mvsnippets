@@ -149,3 +149,9 @@ Change Password
 node app apostrophe-users:change-password admin
 
 ```
+
+apostrophe minify css and js
+
+```
+ENV=development node app apostrophe:generation && npm start
+```
