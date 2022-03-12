@@ -135,7 +135,7 @@ A snippet library for ApostropheCMS development.
 
 <br>
 
-### apostrophe - set password and change password
+### apostrophe basic cmd
 
 Add user and set password
 
@@ -148,4 +148,10 @@ Change Password
 ```
 node app apostrophe-users:change-password admin
 
+```
+
+Create module
+
+```
+apostrophe create-module <module name>
 ```
