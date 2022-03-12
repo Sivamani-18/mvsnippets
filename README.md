@@ -150,15 +150,14 @@ node app apostrophe-users:change-password admin
 
 ```
 
-<<<<<<< HEAD
 Create module
 
 ```
 apostrophe create-module <module name>
-=======
+```
+
 apostrophe minify css and js
 
 ```
 ENV=development node app apostrophe:generation && npm start
->>>>>>> fbac1b863d3d1fffccb31b0aaa4eaf64eef9dcd4
 ```
